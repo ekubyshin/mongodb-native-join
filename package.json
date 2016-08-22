@@ -1,10 +1,9 @@
 {
   "name": "mongodb-native-join",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "Join queries for mongodb native",
   "main": "bin/index.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --compilers js:babel-core/register",
     "install": "node ./node_modules/babel-cli/bin/babel lib/index.js -o bin/index.js"
   },
   "keywords": [
