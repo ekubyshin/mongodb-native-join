@@ -1,6 +1,6 @@
 {
   "name": "mongodb-native-join",
-  "version": "0.9.5",
+  "version": "0.9.6",
   "description": "Join queries for mongodb native",
   "main": "bin/index.js",
   "scripts": {
