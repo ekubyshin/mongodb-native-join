@@ -8,9 +8,9 @@ Support chain.
 #API
 cursor(sourceCursor) - returns new wrapped cursor
 
-populate(field, collectionName) - query all fields from destination collection
+join(field, collectionName) - query all fields from destination collection
 
-populate(field, collectionName, project) - query specified fields from destination collection
+join(field, collectionName, project) - query specified fields from destination collection
 
 
 #Usage:
@@ -22,8 +22,8 @@ populate(field, collectionName, project) - query specified fields from destinati
     	const cursor = joinedCursor(db.collection('som_collection').find('posts'));
 
     	cursor
-    		.populate('author', 'users', 'login firstName lastName')
-			.populate('comments', 'comments')
+    		.join('author', 'users', 'login firstName lastName')
+			.join('comments', 'comments')
 			.toArray();
 		//do something    		
 	});
