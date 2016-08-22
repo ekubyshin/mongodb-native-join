@@ -17,6 +17,9 @@
     "type": "git",
     "url": "https://github.com/ekubyshin/mongodb-native-join"
   },
+  "dependencies": {
+    "lodash": "^4.15.0"
+  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
