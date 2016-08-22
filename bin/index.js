@@ -40,6 +40,13 @@ var Cursor = function () {
             throw new Error('You must provide a mongodb cursor instance');
         }
     }
+    /**
+     * @param {String} field which to join
+     * @param {String} collection from which to query
+     * @param {String} fields to query from collection. Space is field separator
+     * @returns {Cursor}
+     */
+
 
     _createClass(Cursor, [{
         key: 'join',
@@ -197,6 +204,12 @@ var Cursor = function () {
 
     return Cursor;
 }();
+
+/**
+ * @param {MongodbCursor} source cursor
+ * @returns {Cursor} wrapped cursor with joins
+ */
+
 
 exports.default = function (cursor) {
 
