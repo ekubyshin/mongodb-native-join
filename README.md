@@ -7,8 +7,11 @@ Support chain.
 
 #API
 cursor(sourceCursor) - returns new wrapped cursor
+
 populate(field, collectionName) - query all fields from destination collection
-populate(field, collectionName, project) - query specified fields from destination collection.
+
+populate(field, collectionName, project) - query specified fields from destination collection
+
 
 #Usage:
 
